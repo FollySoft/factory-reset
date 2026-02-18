@@ -149,7 +149,11 @@ hr {
     border-bottom-right-radius: 4px;
 }
 
+/* Engraved Text effect:
+https://www.30secondsofcode.org/css/s/engraved-embossed-text/ */
+
 .game-creator-text {
+    grid-area: creators;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
     background-color: #000000;
@@ -157,13 +161,15 @@ hr {
     -webkit-background-clip: text;
     color: rgb(60, 60, 60);
     text-shadow: 1px 1px rgba(255, 255, 255, 0.5);
+    margin: 0px;    
+    margin-top: 12px;
+    margin-left: 12px;
     padding: 0px;
-    margin: 0px;;
 }
 .game-title-text {
-
+    grid-area: title;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: xx-large;
+    font-size: x-large;
     font-weight: 900;
     background-color: #000000;
     background-clip: text;
@@ -171,8 +177,54 @@ hr {
     color: black;
     text-shadow: 1px 1px rgba(255, 255, 255, 0.5);
     margin: 0px;
-    margin-top: 10px;
+    margin-left: 12px;
+    padding: 0px;
 }
 
+.game-details-text {
+    grid-area: details;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: smaller;
+    background-color: #000000;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgb(60, 60, 60);
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.5);    
+    margin: 0px;
+    margin-bottom: 12px;
+    margin-left: 12px;
+    padding: 0px;
+}
+
+.game-list-image {
+    grid-area: image;
+    object-fit: cover;
+    width: 82px;
+    height: 82px;
+    border-radius: 18px;
+    box-shadow: 0px 4px 2px black;
+    margin: 8px;
+  }
+
+  .arrow {
+    grid-area: arrow;
+    right: 0px;
+    width: 40px;
+    position: absolute;
+  }
+
+.game-entry {
+    padding-top: 8px;
+    padding-bottom: 12px;    
+    display: inline-grid;
+    grid-template-areas:
+    "image creators ."
+    "image title arrow"
+    "image details .";
+    align-items: center;
+    grid-template-columns: min-content auto;
+}
+  
 
   
