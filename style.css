@@ -149,6 +149,22 @@ hr {
     border-bottom-right-radius: 4px;
 }
 
+#zine-links {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.zine-link-img {
+    object-fit: cover;
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 2px black;
+    margin: 8px;
+}
+
 /* Engraved Text effect:
 https://www.30secondsofcode.org/css/s/engraved-embossed-text/ */
 
@@ -156,6 +172,7 @@ https://www.30secondsofcode.org/css/s/engraved-embossed-text/ */
     grid-area: creators;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
+    font-size: small;
     background-color: #000000;
     background-clip: text;
     -webkit-background-clip: text;
@@ -169,7 +186,7 @@ https://www.30secondsofcode.org/css/s/engraved-embossed-text/ */
 .game-title-text {
     grid-area: title;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: x-large;
+    font-size: large;
     font-weight: 900;
     background-color: #000000;
     background-clip: text;
@@ -200,8 +217,8 @@ https://www.30secondsofcode.org/css/s/engraved-embossed-text/ */
 .game-list-image {
     grid-area: image;
     object-fit: cover;
-    width: 82px;
-    height: 82px;
+    width: 75px;
+    height: 75px;
     border-radius: 18px;
     box-shadow: 0px 4px 2px black;
     margin: 8px;
