@@ -1,5 +1,7 @@
 body {
-    background-color: rgb(161, 161, 163);
+    /* background-color: rgb(161, 161, 163); */
+    background-image: url('.\\images\\Grass_Belarra.jpg');
+    background-size: cover;
 }
 
 .top-button {
@@ -7,6 +9,7 @@ body {
 }
 
 #main-content {
+    background-color: rgb(161, 161, 163);
     position: absolute;
     /* These % values come from measuring your image's transparent area */
     top: 14%;      /* tweak based on your image */
@@ -18,25 +21,26 @@ body {
 }
 
 #phone-wrapper {
-  position: relative;
-  width: 550px; /* your max width */
-  /* Height should match the phone image aspect ratio: 960/1920 = 0.5 */
-  /* So height = 550 * (1920/960) = 1100px */
-  height: 1100px;
-  margin-left: auto;
-  margin-right: auto;
+    /* background-color: rgb(161, 161, 163); */
+    position: relative;
+    width: 550px; /* your max width */
+    /* Height should match the phone image aspect ratio: 960/1920 = 0.5 */
+    /* So height = 550 * (1920/960) = 1100px */
+    height: 1100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #phone-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  pointer-events: none; /* lets clicks pass through to content */
-  z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    pointer-events: none; /* lets clicks pass through to content */
+    z-index: 10;
 }
 
 h1 {
@@ -55,6 +59,12 @@ hr {
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+#game-page-button-container {
+    width: 100%;
+    display: flex;
+    justify-content: left;
 }
 
 #ios-topbar {    
@@ -181,6 +191,11 @@ hr {
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
 }
+#top-button-back {
+    border: 2px;
+    border-radius: 4px;
+    width: 100px;
+}
 
 #zine-links {
     width: 100%;
@@ -194,8 +209,8 @@ hr {
 
 .zine-link-img {
     /* object-fit: cover; */
-    width: 200px;
-    height: 100px;
+    width: 350px;
+    height: 150px;
     border-radius: 10px;
     box-shadow: 0px 1px 2px black;
     margin: 8px;
@@ -215,7 +230,7 @@ https://www.30secondsofcode.org/css/s/engraved-embossed-text/ */
     color: rgb(60, 60, 60);
     text-shadow: 1px 1px rgba(255, 255, 255, 0.5);
     margin: 0px;    
-    margin-top: 12px;
+    margin-top: 4px;
     margin-left: 12px;
     padding: 0px;
 }
@@ -230,6 +245,7 @@ https://www.30secondsofcode.org/css/s/engraved-embossed-text/ */
     color: black;
     text-shadow: 1px 1px rgba(255, 255, 255, 0.5);
     margin: 0px;
+    margin-top: 12px;
     margin-left: 12px;
     padding: 0px;
 }
@@ -245,16 +261,18 @@ https://www.30secondsofcode.org/css/s/engraved-embossed-text/ */
     color: rgb(60, 60, 60);
     text-shadow: 1px 1px rgba(255, 255, 255, 0.5);    
     margin: 0px;
+    margin-top: 12px;
     margin-bottom: 12px;
     margin-left: 12px;
     padding: 0px;
+    max-width: 85%;
 }
 
 .game-list-image {
     grid-area: image;
     object-fit: cover;
-    width: 75px;
-    height: 75px;
+    width: 86px;
+    height: 86px;
     border-radius: 18px;
     box-shadow: 0px 4px 2px black;
     margin: 8px;
